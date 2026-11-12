@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Fuse</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="VL.Core" />
+    <Reference Include="Stride.Graphics" />
+    <Reference Include="VL.Stride.Runtime" />
+    <Reference Include="Stride.Rendering" />
+    <Reference Include="Stride.Core.Mathematics" />
+    <Reference Include="Stride" />
+    <Reference Include="Stride.Core" />
+    <Reference Include="Stride.Shaders" />
+    <Reference Include="Stride.Engine" />
+    <Reference Include="Stride.Shaders.Compiler" />
+    <Reference Include="Stride.Shaders.Parser" />
+    <Reference Include="System.Reactive" />
+    <Reference Include="System.Interactive" />
+    <Reference Include="Stride.Games" />
+    <Reference Include="JetBrains.Profiler.Api" />
+    <Reference Include="vvvv.geometry3Sharp" />
+  </ItemGroup>
+</Project>
