@@ -18,7 +18,7 @@ public sealed class HlslEmitter
         ValidateIdentifier(options.FunctionName, nameof(options.FunctionName));
         ValidateIdentifier(options.PositionParameter, nameof(options.PositionParameter));
 
-        var sb = new StringBuilder();
+        var body = new StringBuilder();
         var names = new Dictionary<SdfNode, string>(ReferenceComparer.Instance);
         var emitted = new HashSet<SdfNode>(ReferenceComparer.Instance);
         var counter = 0;
@@ -65,7 +65,7 @@ public sealed class HlslEmitter
             var variable = $"sdf_{++counter}";
             names.Add(node, variable);
             if (emitted.Add(node))
-                sb.Append("    float ").Append(variable).Append(" = ").Append(expression).AppendLine(";");
+                body.Append("    float ").Append(variable).Append(" = ").Append(expression).AppendLine(";");
             return variable;
         }
 
